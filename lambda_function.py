@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     key = event['detail']['object']['key']
     # 検証用 直接バケットとキーを設定することでそのファイルの csv 化が可能
     # bucket = ''
-    # key = 'n'
+    # key = ''
     
     # 日時取得
     daytime =  key[-25:].replace('.json', '')
